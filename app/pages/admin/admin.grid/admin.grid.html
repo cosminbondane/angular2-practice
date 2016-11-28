@@ -1,0 +1,8 @@
+<h2>Grid</h2>
+<ul>
+    <li *ngFor="let user of users">
+        {{user.name}} 
+        contact at <span class="email">{{user.email}}</span> 
+        or <user-address [user]="user"></user-address>
+    </li>
+</ul>
