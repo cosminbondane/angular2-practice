@@ -15,7 +15,8 @@ module.exports = function(config) {
     plugins: [
       require('karma-jasmine'),
       require('karma-chrome-launcher'),
-      require('karma-jasmine-html-reporter')
+      require('karma-jasmine-html-reporter'),
+      require('karma-phantomjs-launcher')
     ],
 
     client: {
@@ -35,6 +36,7 @@ module.exports = function(config) {
     files: [
       // System.js for module loading
       'node_modules/systemjs/dist/system.src.js',
+      'node_modules/systemjs/dist/system-polyfills.js',
 
       // Polyfills
       'node_modules/core-js/client/shim.js',
@@ -55,6 +57,7 @@ module.exports = function(config) {
 
       // Paths loaded via module imports:
       // Angular itself
+      
       { pattern: 'node_modules/@angular/**/*.js', included: false, watched: false },
       { pattern: 'node_modules/@angular/**/*.js.map', included: false, watched: false },
 

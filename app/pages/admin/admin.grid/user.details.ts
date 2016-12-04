@@ -5,12 +5,12 @@ import { User } from '../../../services/models/user';
 
 @Component({
     moduleId: module.id,
-    selector: 'user-address',
-    templateUrl: 'user.address.html',
-    styleUrls: ['user.address.css']
+    selector: 'user-details',
+    templateUrl: 'user.details.html',
+    styleUrls: ['user.details.css']
 })
 
-export class UserAddress {
+export class UserDetails {
     @Input() user: User;
 
     displayNumber() : void {

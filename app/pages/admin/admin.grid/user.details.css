@@ -2,3 +2,7 @@ a {
     color: cornflowerblue;
     text-decoration: underline;
 }
+
+.user-details {
+  margin: 5px;
+}
